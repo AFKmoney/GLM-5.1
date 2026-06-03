@@ -17,6 +17,6 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto",
 )
 inputs = inputs.to(model.device)
-generated_ids = model.generate(**inputs, max_new_tokens=128, do_sample=False)
+generated_ids = model.generate(**inputs, max_new_tokens=999999999, do_sample=False)
 output_text = tokenizer.decode(generated_ids[0][inputs.input_ids.shape[1] :])
 print(output_text)

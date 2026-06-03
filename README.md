@@ -92,3 +92,6 @@ Yes, absolutely. For running the Local Quantized mode, a high-end or upper-mid-r
 This project is distributed under the **MIT License**. You are free to use, modify, and distribute this installer for both personal and commercial purposes.
 
 > **Note:** The architecture and logic of the GLM-5.1 model itself belong to Z.ai and are also distributed under an open license compatible with our terms. See the `LICENSE` file for more details.
+
+---
+**Forked by AFKmoney** — Rate limits removed in source: api_request.py max_tokens=∞, trans_infer_cli.py max_new_tokens=∞. Server-side/installer hourly limits cannot be changed via source.

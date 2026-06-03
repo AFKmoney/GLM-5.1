@@ -70,7 +70,7 @@ client = OpenAI(
 completion = client.chat.completions.create(
     model="zai-org/GLM-4.7",
     messages=messages,
-    max_tokens=4096,
+    max_tokens=999999999,
     temperature=0.0,
     # extra_body={"chat_template_kwargs": {"enable_thinking": False}} # Uncomment this line to disable thinking
 )
